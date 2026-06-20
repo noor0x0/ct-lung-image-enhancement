@@ -9,7 +9,7 @@ CT images may contain low contrast or noise, making it difficult to identify fin
 This project applies several image enhancement techniques to improve visual clarity and support better analysis.
 
 ## Dataset
-The project uses CT scan images from a Kaggle DICOM dataset.
+The dataset used in this project is a public CT scan dataset from Kaggle.
 
 ## Techniques Used
 - Histogram Equalization
@@ -17,32 +17,28 @@ The project uses CT scan images from a Kaggle DICOM dataset.
 - Sobel Edge Enhancement
 - HU Conversion and Windowing
 
-## Why These Techniques?
-### Histogram Equalization
-Improves global contrast and makes low-contrast structures more visible.
-
-### CLAHE
-Enhances local contrast while limiting noise amplification, making it useful for medical images.
-
-### Sobel Edge Enhancement
-Highlights edges and boundaries between tissues, helping reveal lung structures more clearly.
-
-### HU & Windowing
-Uses Hounsfield Unit conversion and windowing to focus on meaningful intensity ranges in CT images.
-
 ## Technologies Used
 - Python
-- OpenCV
 - NumPy
 - Matplotlib
+- OpenCV
 - Pydicom
 - Digital Image Processing
 
+## Project Structure
+```text
+ct-lung-image-enhancement/
+├── README.md
+├── ct_lung_image_enhancement.ipynb
+├── CT_Lung_Image_Enhancement_Presentation.pptx
+└── requirements.txt
+```
 ## Summary
-HE improves global low contrast.
-CLAHE enhances local details.
-Sobel highlights weak edges.
-HU and windowing improve CT intensity interpretation.
+Histogram Equalization improves global contrast.
+CLAHE enhances local details while limiting noise amplification.
+Sobel highlights edges and tissue boundaries.
+HU and windowing help focus on meaningful CT intensity ranges.
+Author
 
 ## Author
 
